@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll System</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div id="admin-panel" class="panel">
+      <h2>Admin Panel</h2>
+      <form id="admin-form">
+        <label for="employee">Select Employee:</label>
+        <select id="employee" required>
+          <option value="EMP001">Employee 1 (EMP001)</option>
+          <option value="EMP002">Employee 2 (EMP002)</option>
+          <option value="EMP003">Employee 3 (EMP003)</option>
+          <option value="EMP004">Employee 4 (EMP004)</option>
+          <option value="EMP005">Employee 5 (EMP005)</option>
+        </select>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" placeholder="Enter salary" required>
+        <label for="tax1">Tax 1 (%):</label>
+        <input type="number" id="tax1" placeholder="Enter tax 1 percentage" required>
+        <label for="tax2">Tax 2 (%):</label>
+        <input type="number" id="tax2" placeholder="Enter tax 2 percentage" required>
+        <label for="tax3">Tax 3 (%):</label>
+        <input type="number" id="tax3" placeholder="Enter tax 3 percentage" required>
+        <label for="tax4">Tax 4 (%):</label>
+        <input type="number" id="tax4" placeholder="Enter tax 4 percentage" required>
+        <button type="submit">Pay Employee</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="pay.js"></script>
+</body>
+</html>

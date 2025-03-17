@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll System</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+<div id="container">
+
+    <div id="employee-panel" class="panel">
+      <h2>Employee Panel</h2>
+      <form id="employee-form">
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" placeholder="Enter your employee ID" required>
+        <button type="button" onclick="viewSalary()">View Salary</button>
+      </form>
+      <div id="salary-details">
+        <p><strong>Salary:</strong> <span id="display-salary">0</span></p>
+        <p><strong>Tax 1 Deducted:</strong> <span id="display-tax1">0</span></p>
+        <p><strong>Tax 2 Deducted:</strong> <span id="display-tax2">0</span></p>
+        <p><strong>Tax 3 Deducted:</strong> <span id="display-tax3">0</span></p>
+        <p><strong>Tax 4 Deducted:</strong> <span id="display-tax4">0</span></p>
+        <p><strong>Total Taxes Deducted:</strong> <span id="display-total-tax">0</span></p>
+        <p><strong>Net Salary:</strong> <span id="display-net-salary">0</span></p>
+      </div>
+    </div>
+</div>
+<script src="pay.js"></script>
+</body>
+</html>
