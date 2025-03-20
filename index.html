@@ -6,21 +6,26 @@
     <title>Document</title> 
     <style>
 body{
-    color: rgb(36, 89, 187);
+    color: navy;
     display: flex;
     height: 100vh;
     align-items: center;
     padding: 20px;
     margin: auto;
+    background-image: url("paymentBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7px);
 }
 #container{
     display: flex;
     max-width: 400px;
     justify-content: center;
     align-items: center;
+    background-color: rgb(67, 62, 62);
     gap: 20px;
     padding: 40px;
-    border-radius: 3px;
+    border-radius: 20px;
     border: 3px;
     margin-left: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,16 +36,16 @@ body{
     border-radius: 30px;
     height: 50px;
     width: 90px;
-    background-color: rgb(70, 233, 70);
+    background-color: navy;
     color: aliceblue;
-    border-color: greenyellow;
+    border-color: rgb(45, 45, 219);
 }
 #employeeButton button{
     border-radius: 30px;
     height: 50px;
-    border-color: greenyellow;
+    border-color: rgb(45, 45, 219);
     width: 90px;
-    background-color: rgb(70, 233, 70);
+    background-color: navy;
     color: aliceblue;
 }
 button:hover{
@@ -49,14 +54,16 @@ button:hover{
     cursor: pointer;
 }
 h2{
-    font-size: 16px;
+    font-size: 25px;
+    color: aliceblue;
+    margin-right: 10px;
 }
     </style>
 </head>
 <body>
     
     <div id="container">
-        <h2>Click to Login as Admin or Employee</h2>
+        <h2>Click to Login</h2>
 <div id="adminButton">
     <button><a href="adminLoginPage.html"  style="text-decoration: none; color: white;">Admin Login</a></button>
 </div>
